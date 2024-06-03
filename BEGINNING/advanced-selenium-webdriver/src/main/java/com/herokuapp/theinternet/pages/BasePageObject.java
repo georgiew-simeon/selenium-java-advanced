@@ -57,4 +57,8 @@ public class BasePageObject {
         }
     }
 
+    public String readPageUrl() {
+        return driver.getCurrentUrl();
+    }
+
 }
