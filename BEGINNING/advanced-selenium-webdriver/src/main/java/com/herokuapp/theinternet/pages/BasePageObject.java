@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class BasePageObject {
 
@@ -61,4 +62,7 @@ public class BasePageObject {
         return driver.getCurrentUrl();
     }
 
+    protected List<WebElement> findAll(By locator) {
+        return driver.findElements(locator);
+    }
 }

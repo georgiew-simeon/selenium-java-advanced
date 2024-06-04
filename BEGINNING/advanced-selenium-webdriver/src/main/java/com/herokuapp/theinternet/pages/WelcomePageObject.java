@@ -25,4 +25,10 @@ public class WelcomePageObject extends BasePageObject{
         click(formAuthenticationLink);
         return new LoginPage(driver, log);
     }
+
+    public CheckboxesPage clickCheckboxesLink() {
+        log.info("Clicking Checkboxes link on Welcome Page");
+        click(By.linkText("Checkboxes"));
+        return new CheckboxesPage(driver, log);
+    }
 }
